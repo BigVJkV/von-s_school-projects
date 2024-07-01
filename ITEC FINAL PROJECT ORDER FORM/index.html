@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Ice Cream Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <img src="ice cream menu/logo/logo.png" alt="Delicious Ice Cream Shop Logo" class="logo-image">
+            <h1 class="logo">Sweet Scoops Delight</h1>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#flavors">Flavors</a></li>
+                    <li><a href="#extras">Drinks</a></li>
+                    <li><a href="#pastries">Pastries</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Welcome to the <span>Best Ice Cream </span> in Town!</h2>
+            <p>Welcome to "Sweet Scoops Delight" your new favorite ice cream destination!  Sweet Scoops Delight is a delightful haven for ice cream enthusiasts of all ages. Our shop offers a whimsical atmosphere where you can indulge in a variety of delectable, handcrafted ice creams made from the finest ingredients. Whether you're craving classic flavors or adventurous new creations, Sweet Scoops Delight promises a sweet escape that will leave you smiling with every scoop. Come join us and experience the magic of our delicious, dreamy treats!
+
+            </br></br>Our goal at Sweet Scoops Delight is to provide an unforgettable ice cream experience by offering high-quality, innovative flavors in a welcoming and joyful environment, ensuring every visit is a delightful treat for our customers.
+            </p>
+        </div>
+    </section>
+    
+    <section id="flavors" class="flavors">
+        <div class="container">
+            <h2>Our Flavors</h2>
+            <div class="flavor-list">
+                <!-- Vanilla -->
+                <div class="flavor-item" onclick="openModal('Vanilla Dream', 'ice cream menu/ice cream/2.png', 'Classic creamy vanilla ice cream that is simple and delightful.')">
+                    <img src="ice cream menu/ice cream/vanilla cone.png" alt="Vanilla">
+                    <h3>Vanilla Dream</h3>
+                </div>
+                <!-- Chocolate -->
+                <div class="flavor-item" onclick="openModal('Chocolate Delight', 'ice cream menu/ice cream/3.png', 'Rich and smooth chocolate ice cream for every chocolate lover.')">
+                    <img src="ice cream menu/ice cream/chocolate cone.png" alt="Chocolate">
+                    <h3>Chocolate Delight</h3>
+                </div>
+                <!-- Strawberry -->
+                <div class="flavor-item" onclick="openModal('Berry Bliss (Strawberry)', 'ice cream menu/ice cream/4.png', 'Fresh strawberry ice cream bursting with berry flavor.')">
+                    <img src="ice cream menu/ice cream/strawberry cone.png" alt="Berry">
+                    <h3>Berry Bliss</h3>
+                </div>
+<!-- Minty Fresh (Mint Chocolate Chip) -->
+<div class="flavor-item" onclick="openModal('Minty Fresh (Mint Chocolate Chip)', 'ice cream menu/ice cream/5.png', 'Refreshing mint ice cream with delicious chocolate chips.')">
+    <img src="ice cream menu/ice cream/mint cone.png" alt="Minty Fresh (Mint Chocolate Chip)">
+    <h3>Minty Fresh (Mint Chocolate Chip)</h3>
+</div>
+<!-- Cookie Crunch (Cookies and Cream) -->
+<div class="flavor-item" onclick="openModal('Cookie Crunch (Cookies and Cream)', 'ice cream menu/ice cream/6.png', 'Creamy ice cream loaded with crunchy cookie pieces.')">
+    <img src="ice cream menu/ice cream/cookies and cream cone.png" alt="Cookie Crunch (Cookies and Cream)">
+    <h3>Cookie Crunch (Cookies and Cream)</h3>
+</div>
+<!-- Butter Pecan Pop -->
+<div class="flavor-item" onclick="openModal('Butter Pecan Pop', 'ice cream menu/ice cream/7.png', 'Buttery ice cream with roasted pecan nuts for a nutty delight.')">
+    <img src="ice cream menu/ice cream/pecan cone.png" alt="Butter Pecan Pop">
+    <h3>Butter Pecan Pop</h3>
+</div>
+<!-- Rocky Road Trip -->
+<div class="flavor-item" onclick="openModal('Rocky Road Trip', 'ice cream menu/ice cream/8.png', 'Chocolate ice cream with marshmallows and nuts for a bumpy, tasty ride.')">
+    <img src="ice cream menu/ice cream/rocky road cone.png" alt="Rocky Road Trip">
+    <h3>Rocky Road Trip</h3>
+</div>
+<!-- Morning Brew (Coffee) -->
+<div class="flavor-item" onclick="openModal('Morning Brew (Coffee)', 'ice cream menu/ice cream/9.png', 'Smooth coffee ice cream that’s perfect for coffee enthusiasts.')">
+    <img src="ice cream menu/ice cream/coffee cone.png" alt="Morning Brew (Coffee)">
+    <h3>Morning Brew (Coffee)</h3>
+</div>
+<!-- Back to Pistachio -->
+<div class="flavor-item" onclick="openModal('Back to Pistachio', 'ice cream menu/ice cream/10.png', 'Nutty and creamy pistachio ice cream for a delightful treat.')">
+    <img src="ice cream menu/ice cream/pistachio cone.png" alt="Back to Pistachio">
+    <h3>Back to Pistachio</h3>
+</div>
+<!-- Doughy Treat (Cookie Dough) -->
+<div class="flavor-item" onclick="openModal('Doughy Treat (Cookie Dough)', 'ice cream menu/ice cream/11.png', 'Creamy ice cream with chunks of delicious cookie dough.')">
+    <img src="ice cream menu/ice cream/cookie dough cone.png" alt="Doughy Treat (Cookie Dough)">
+    <h3>Doughy Treat (Cookie Dough)</h3>
+</div>
+<!-- Neapolitan Trio -->
+<div class="flavor-item" onclick="openModal('Neapolitan Trio', 'ice cream menu/ice cream/12.png', 'A classic trio of chocolate, vanilla, and strawberry in one scoop.')">
+    <img src="ice cream menu/ice cream/neapolitan cone.png" alt="Neapolitan Trio">
+    <h3>Neapolitan Trio</h3>
+</div>
+<!-- Ube Bliss -->
+<div class="flavor-item" onclick="openModal('Ube Bliss', 'ice cream menu/ice cream/13.png', 'Velvety purple yam ice cream with a unique and sweet flavor.')">
+    <img src="ice cream menu/ice cream/ube cone.png" alt="Ube Bliss">
+    <h3>Ube Bliss</h3>
+</div>
+<!-- Birthday Surprise -->
+<div class="flavor-item" onclick="openModal('Birthday Surprise', 'ice cream menu/ice cream/14.png', 'Fun and festive ice cream with cake pieces and colorful sprinkles.')">
+    <img src="ice cream menu/ice cream/bday cone.png" alt="Birthday Surprise">
+    <h3>Birthday Surprise</h3>
+</div>
+<!-- Sweet Caramel Swirl (Salted Caramel) -->
+<div class="flavor-item" onclick="openModal('Sweet Caramel Swirl (Salted Caramel)', 'ice cream menu/ice cream/15.png', 'Creamy ice cream with rich swirls of salted caramel.')">
+    <img src="ice cream menu/ice cream/salted caramel cone.png" alt="Sweet Caramel Swirl (Salted Caramel)">
+    <h3>Sweet Caramel Swirl (Salted Caramel)</h3>
+</div>
+<!-- Cherry Love (Cherry Garcia) -->
+<div class="flavor-item" onclick="openModal('Cherry Love (Cherry Garcia)', 'ice cream menu/ice cream/16.png', 'Cherry ice cream with chunks of cherries and chocolate pieces.')">
+    <img src="ice cream menu/ice cream/cherry cone.png" alt="Cherry Love (Cherry Garcia)">
+    <h3>Cherry Love (Cherry Garcia)</h3>
+</div>
+<!-- Tropical Mango -->
+<div class="flavor-item" onclick="openModal('Tropical Mango', 'ice cream menu/ice cream/17.png', 'Sweet and tangy mango ice cream that’s tropical bliss in a scoop.')">
+    <img src="ice cream menu/ice cream/mangoe cone.png" alt="Tropical Mango">
+    <h3>Tropical Mango</h3>
+</div>
+<!-- Raspberry Ripple Delight -->
+<div class="flavor-item" onclick="openModal('Raspberry Ripple Delight', 'ice cream menu/ice cream/18.png', 'Creamy ice cream with ribbons of tart raspberry sauce.')">
+    <img src="ice cream menu/ice cream/raspberry cone.png" alt="Raspberry Ripple Delight">
+    <h3>Raspberry Ripple Delight</h3>
+</div>
+<!-- Coconut Cloud -->
+<div class="flavor-item" onclick="openModal('Coconut Cloud', 'ice cream menu/ice cream/19.png', 'Light and creamy coconut ice cream that’s a tropical dream.')">
+    <img src="ice cream menu/ice cream/coconut cone.png" alt="Coconut Cloud">
+    <h3>Coconut Cloud</h3>
+</div>
+<!-- Peanut Butter Dream -->
+<div class="flavor-item" onclick="openModal('Peanut Butter Dream', 'ice cream menu/ice cream/20.png', 'Creamy peanut butter ice cream that’s rich and nutty.')">
+    <img src="ice cream menu/ice cream/peanut butter cone.png" alt="Peanut Butter Dream">
+    <h3>Peanut Butter Dream</h3>
+</div>
+<!-- Lemon Zest Sorbet -->
+<div class="flavor-item" onclick="openModal('Lemon Zest Sorbet', 'ice cream menu/ice cream/21.png', 'Refreshing and tangy lemon sorbet that’s perfect for a sunny day.')">
+    <img src="ice cream menu/ice cream/lemon cone.png" alt="Lemon Zest Sorbet">
+    <h3>Lemon Zest Sorbet</h3>
+</div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="extras" class="extras">
+        <div class="container">
+            <h2>Coffee, Milkshakes, and Milkteas!</h2>
+            <p>Indulge in a variety of delightful beverages and treats, from smooth brewed coffee over ice to rich espresso with steamed milk, creamy affogato delights, traditional milk teas with tapioca pearls, and a selection of creamy milkshakes bursting with flavors</p>
+            <div class="extras-list">
+                <!-- Chill Brew Delight -->
+                <div class="extra-item" onclick="openModal('Chill Brew Delight', 'ice cream menu/coffee/Chill Brew Delight.png', 'Smooth brewed coffee served over ice for a refreshing pick-me-up.')">
+                    <img src="ice cream menu/coffee/Chill Brew Delight.png" alt="Chill Brew Delight">
+                    <h3>Chill Brew Delight</h3>
+                </div>
+                <!-- Frosty Latte Love -->
+                <div class="extra-item" onclick="openModal('Frosty Latte Love', 'ice cream menu/coffee/Frosty Latte Love.png', 'A rich espresso combined with steamed milk and a light layer of foam.')">
+                    <img src="ice cream menu/coffee/Frosty Latte Love.png" alt="Frosty Latte Love">
+                    <h3>Frosty Latte Love</h3>
+                </div>
+                <!-- Heavenly Affogato Delight -->
+                <div class="extra-item" onclick="openModal('Heavenly Affogato Delight', 'ice cream menu/coffee/Heavenly Affogato Delight.png', 'A scoop of creamy vanilla ice cream drenched in a shot of hot, rich espresso.')">
+                    <img src="ice cream menu/coffee/Heavenly Affogato Delight.png" alt="Heavenly Affogato Delight">
+                    <h3>Heavenly Affogato Delight</h3>
+                </div>
+                <!-- Classic Black Milk Tea -->
+                <div class="extra-item" onclick="openModal('Classic Black Milk Tea', 'ice cream menu/milk tea/Classic Black Milk Tea.png', 'Traditional black tea with creamy milk and chewy tapioca pearls.')">
+                    <img src="ice cream menu/milk tea/Classic Black Milk Tea.png" alt="Classic Black Milk Tea">
+                    <h3>Classic Black Milk Tea</h3>
+                </div>
+                <!-- Matcha Green Milk Tea -->
+                <div class="extra-item" onclick="openModal('Matcha Green Milk Tea', 'ice cream menu/milk tea/Matcha Green Milk Tea.png', 'Earthy matcha green tea blended with creamy milk for a smooth finish.')">
+                    <img src="ice cream menu/milk tea/Matcha Green Milk Tea.png" alt="Matcha Green Milk Tea">
+                    <h3>Matcha Green Milk Tea</h3>
+                </div>
+                <!-- Taro Milk Tea -->
+                <div class="extra-item" onclick="openModal('Taro Milk Tea', 'ice cream menu/milk tea/Taro Milk Tea.png', 'Creamy and sweet taro root tea with a hint of vanilla, accompanied by tapioca pearls.')">
+                    <img src="ice cream menu/milk tea/Taro Milk Tea.png" alt="Taro Milk Tea">
+                    <h3>Taro Milk Tea</h3>
+                </div>
+                <!-- Brown Sugar Milk Tea -->
+                <div class="extra-item" onclick="openModal('Brown Sugar Milk Tea', 'ice cream menu/milk tea/Brown Sugar Milk Tea.png', 'Sweet brown sugar syrup with creamy milk tea and tapioca pearls.')">
+                    <img src="ice cream menu/milk tea/Brown Sugar Milk Tea.png" alt="Brown Sugar Milk Tea">
+                    <h3>Brown Sugar Milk Tea</h3>
+                </div>
+                <!-- Toasted Marshmallow Shake -->
+                <div class="extra-item" onclick="openModal('Toasted Marshmallow Shake', 'ice cream menu/milkshake/Toasted Marshmallow Shake.png', 'Creamy vanilla ice cream with toasted marshmallow flavor.')">
+                    <img src="ice cream menu/milkshake/Toasted Marshmallow Shake.png" alt="Toasted Marshmallow Shake">
+                    <h3>Toasted Marshmallow Shake</h3>
+                </div>
+                <!-- Salted Caramel Pretzel Shake -->
+                <div class="extra-item" onclick="openModal('Salted Caramel Pretzel Shake', 'ice cream menu/milkshake/Salted Caramel Pretzel Shake.png', 'Caramel ice cream with crunchy pretzel bits.')">
+                    <img src="ice cream menu/milkshake/Salted Caramel Pretzel Shake.png" alt="Salted Caramel Pretzel Shake">
+                    <h3>Salted Caramel Pretzel Shake</h3>
+                </div>
+                <!-- Matcha Mint Shake -->
+                <div class="extra-item" onclick="openModal('Matcha Mint Shake', 'ice cream menu/milkshake/Matcha Mint Shake.png', 'Earthy matcha green tea blended with refreshing mint.')">
+                    <img src="ice cream menu/milkshake/Matcha Mint Shake.png" alt="Matcha Mint Shake">
+                    <h3>Matcha Mint Shake</h3>
+                </div>
+                <!-- Raspberry White Chocolate Shake -->
+                <div class="extra-item" onclick="openModal('Raspberry White Chocolate Shake', 'ice cream menu/milkshake/Raspberry White Chocolate Shake.png', 'Tart raspberries blended with sweet white chocolate.')">
+                    <img src="ice cream menu/milkshake/Raspberry White Chocolate Shake.png" alt="Raspberry White Chocolate Shake">
+                    <h3>Raspberry White Chocolate Shake</h3>
+                </div>
+                <!-- Berry Bliss Duo -->
+                <div class="extra-item" onclick="openModal('Berry Bliss Duo', 'ice cream menu/milkshake/Berry Bliss Duo.png', 'A delightful pair of creamy milkshakes—one bursting with fresh blueberries, the other with ripe strawberries.')">
+                    <img src="ice cream menu/milkshake/Berry Bliss Duo.png" alt="Berry Bliss Duo">
+                    <h3>Berry Bliss Duo</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pastries" class="pastries">
+        <div class="container">
+            <h2>Pastries and Baked Goods</h2>
+            <p>Expect a delightful array of pastries that promise to satisfy every palate, from flaky butter croissants and moist blueberry muffins to sweet chocolate chip cookies. Enjoy a taste sensation that's sure to please.</p>
+            <div class="pastries-list">
+                <!-- Butter Bliss Croissant -->
+                <div class="pastry-item" onclick="openModal('Butter Bliss Croissant', 'ice cream menu/pastries/Butter Bliss Croissant.png', 'Flaky and buttery croissant, perfect for any time of day.')">
+                    <img src="ice cream menu/pastries/Butter Bliss Croissant.png" alt="Butter Bliss Croissant">
+                    <h3>Butter Bliss Croissant</h3>
+                </div>
+                <!-- Berry Burst Muffin -->
+                <div class="pastry-item" onclick="openModal('Berry Burst Muffin', 'ice cream menu/pastries/Berry Burst Muffin.png', 'Moist muffin packed with fresh blueberries.')">
+                    <img src="ice cream menu/pastries/Berry Burst Muffin.png" alt="Berry Burst Muffin">
+                    <h3>Berry Burst Muffin</h3>
+                </div>
+                <!-- Choco Chip Delight -->
+                <div class="pastry-item" onclick="openModal('Choco Chip Delight', 'ice cream menu/pastries/Choco Chip Delight.png', 'Sweet chocolate chips.')">
+                    <img src="ice cream menu/pastries/Choco Chip Delight.png" alt="Choco Chip Delight">
+                    <h3>Choco Chip Delight</h3>
+                </div>
+                <!-- Cinnamon Swirl Roll -->
+                <div class="pastry-item" onclick="openModal('Cinnamon Swirl Roll', 'ice cream menu/pastries/Cinnamon Swirl Roll .png', 'Soft roll with cinnamon filling and a sweet glaze.')">
+                    <img src="ice cream menu/pastries/Cinnamon Swirl Roll .png" alt="Cinnamon Swirl Roll">
+                    <h3>Cinnamon Swirl Roll</h3>
+                </div>
+                <!-- Zesty Lemon Dream Tart -->
+                <div class="pastry-item" onclick="openModal('Zesty Lemon Dream Tart', 'ice cream menu/pastries/Zesty Lemon Dream Tart.png', 'Tangy lemon curd in a crisp tart shell.')">
+                    <img src="ice cream menu/pastries/Zesty Lemon Dream Tart.png" alt="Zesty Lemon Dream Tart">
+                    <h3>Zesty Lemon Dream Tart</h3>
+                </div>
+                <!-- Vanilla Cloud Cupcake -->
+                <div class="pastry-item" onclick="openModal('Vanilla Cloud Cupcake', 'ice cream menu/pastries/Vanilla Cloud Cupcake.png', 'Classic vanilla cupcake with creamy frosting.')">
+                    <img src="ice cream menu/pastries/Vanilla Cloud Cupcake.png" alt="Vanilla Cloud Cupcake">
+                    <h3>Vanilla Cloud Cupcake</h3>
+                </div>
+                <!-- Fudgy Indulgence Brownie -->
+                <div class="pastry-item" onclick="openModal('Fudgy Indulgence Brownie', 'ice cream menu/pastries/Fudgy Indulgence Brownie.png', 'Rich, fudgy chocolate brownie.')">
+                    <img src="ice cream menu/pastries/Fudgy Indulgence Brownie.png" alt="Fudgy Indulgence Brownie">
+                    <h3>Fudgy Indulgence Brownie</h3>
+                </div>
+                <!-- Cinnamon Banana Loaf -->
+                <div class="pastry-item" onclick="openModal('Cinnamon Banana Loaf', 'ice cream menu/pastries/Cinnamon Banana Loaf.png', 'Moist banana bread with a hint of cinnamon.')">
+                    <img src="ice cream menu/pastries/Cinnamon Banana Loaf.png" alt="Cinnamon Banana Loaf">
+                    <h3>Cinnamon Banana Loaf</h3>
+                </div>
+                <!-- Chocolate Heaven Eclair -->
+                <div class="pastry-item" onclick="openModal('Chocolate Heaven Eclair', 'ice cream menu/pastries/Chocolate Heaven Eclair.png', 'Light choux pastry filled with chocolate cream.')">
+                    <img src="ice cream menu/pastries/Chocolate Heaven Eclair.png" alt="Chocolate Heaven Eclair">
+                    <h3>Chocolate Heaven Eclair</h3>
+                </div>
+                <!-- Carrot Top Muffin -->
+                <div class="pastry-item" onclick="openModal('Carrot Top Muffin', 'ice cream menu/pastries/Carrot Top Muffin.png', 'Moist carrot cake in muffin form with a cream cheese center.')">
+                    <img src="ice cream menu/pastries/Carrot Top Muffin.png" alt="Carrot Top Muffin">
+                    <h3>Carrot Top Muffin</h3>
+                </div>
+                <!-- Oatmeal Raisin Classic -->
+                <div class="pastry-item" onclick="openModal('Oatmeal Raisin Classic', 'ice cream menu/pastries/Oatmeal Raisin Classic.png', 'Chewy cookie with oats and raisins.')">
+                    <img src="ice cream menu/pastries/Oatmeal Raisin Classic.png" alt="Oatmeal Raisin Classic">
+                    <h3>Oatmeal Raisin Classic</h3>
+                </div>
+                <!-- Coconut Chew Macaroon -->
+                <div class="pastry-item" onclick="openModal('Coconut Chew Macaroon', 'ice cream menu/pastries/Coconut Chew Macaroon.png', 'Sweet and chewy coconut cookie.')">
+                    <img src="ice cream menu/pastries/Coconut Chew Macaroon.png" alt="Coconut Chew Macaroon">
+                    <h3>Coconut Chew Macaroon</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <section id="order-form" class="order-form">
+        <div class="container">
+            <h2>Order Your Favorites</h2>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" pattern=" [0-9] {10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="order">Your Order:</label>
+                    <textarea id="order" name="order" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <script>
+        function openModal(title, imageSrc, description) {
+            document.getElementById('modal-title').textContent = title;
+            document.getElementById('modal-img').src = imageSrc;
+            document.getElementById('modal-description').textContent = description;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        function closeModal() {
+            document.getElementById('modal').style.display = 'none';
+        }
+    </script>
+    
+    
+    
+    <div id="flavorModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Flavor Title</h2>
+            <img id="modalImage" src="" alt="Flavor Image" style="width:100%; height:auto; border-radius:10px;">
+            <p id="modalDescription">Flavor description goes here...</p>
+        </div>
+    </div>
+    
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>Welcome to Sweet Scoop Delight, the best ice cream in town! We are a family-owned ice cream shop dedicated to bringing you the finest and freshest ice cream. Our recipes have been passed down through generations, where every scoop tells a story of passion, quality, and love for the craft of ice cream making. 
+
+            </br></br>From the very beginning, Sweet Scoop Delight was more than just a business venture, it was a labor of love. We believe that ice cream should be more than just a treat, it should be an experience that evokes joy, nostalgia, and comfort. Today, Sweet Scoop Delight is available in select grocery stores, markets, and online for nationwide delivery.</p>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Whether you have a question, feedback, or simply want to share your love for Sweet Scoop Delight, we're here to help. 
+                
+            </br></br>For any inquiries regarding our products, orders or general questions, please contact us at (555) 123-4567 or email us at info@sweetscoopsdelight.com.
+                
+                We value your feedback and suggestions. Thank you for choosing Sweet Scoop Delight. We look forward to hearing from you and making your day a little sweeter!</p>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Sweet Scoops Delight. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="scripts.js"></script>
+</body>
+</html>
+
+
